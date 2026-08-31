@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import bundleImg from "@/assets/calma-bundle.jpg";
+import { trackInitiateCheckout } from "@/lib/tracking";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -42,6 +43,7 @@ function Cta({
   return (
     <a
       href={CHECKOUT}
+      onClick={trackInitiateCheckout}
       className={`inline-flex items-center justify-center gap-2 rounded-full bg-coral px-8 py-4 text-base font-extrabold tracking-wide text-coral-foreground shadow-[0_16px_32px_-18px_oklch(0.7_0.1_27)] transition-transform hover:-translate-y-0.5 ${className}`}
     >
       {children}
@@ -219,6 +221,7 @@ function Index() {
             </span>
             <a
               href={CHECKOUT}
+              onClick={trackInitiateCheckout}
               className="rounded-full bg-coral px-5 py-2.5 text-sm font-extrabold text-coral-foreground"
             >
               Obtener guía

@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { initTracking } from "../lib/tracking";
 
 function NotFoundComponent() {
   return (
@@ -122,6 +123,21 @@ function RootShell({ children }: { children: ReactNode }) {
       <body>
         {children}
         <Scripts />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            src="https://www.facebook.com/tr?id=310181835505185&ev=PageView&noscript=1"
+            alt=""
+          />
+        </noscript>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html:
+              '<div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13352797/0/45fab5ff/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade" /></a></div>',
+          }}
+        />
       </body>
     </html>
   );
@@ -129,6 +145,10 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
+  useEffect(() => {
+    initTracking();
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
