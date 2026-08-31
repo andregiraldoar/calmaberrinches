@@ -166,5 +166,26 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
   }
 }
+
+@utility soft-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-3xl);
+  box-shadow: 0 18px 40px -28px oklch(0.5 0.06 250 / 0.35);
+}
+
+@utility text-balance-tight {
+  text-wrap: balance;
+}
+
