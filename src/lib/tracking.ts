@@ -40,7 +40,7 @@ export function initTracking() {
   t.async = true;
   t.src = "https://connect.facebook.net/en_US/fbevents.js";
   const s = document.getElementsByTagName("script")[0];
-  s.parentNode?.insertBefore(t, s);
+  s?.parentNode?.insertBefore(t, s);
 
   window.fbq("init", META_PIXEL_ID);
   window.fbq("track", "PageView");
