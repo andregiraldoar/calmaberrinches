@@ -196,7 +196,7 @@ const howItWorks = [
   ["Aplicas el protocolo hoy mismo", "Sin esperas ni configuraciones — desde el primer berrinche, ya sabes qué hacer."],
 ];
 
-const faqs = [
+const faqs: [string, string][] = [
   ["¿Funciona para cualquier edad?", "La guía está diseñada específicamente para niños de 2 a 6 años, con secciones diferenciadas según la etapa (2-3 años y 4-6 años)."],
   ["¿Necesito experiencia previa en crianza respetuosa?", "No. La guía explica todo desde cero, con lenguaje simple y frases listas para usar — no necesitas conocimientos previos."],
   ["¿En qué formato la recibo?", "Todo el material (guía + 7 bonos) llega en formato PDF, muchos de ellos rellenables directamente desde tu celular, tablet o computador, o para imprimir."],
