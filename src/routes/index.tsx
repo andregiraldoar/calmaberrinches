@@ -6,7 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import heroImg from "@/assets/ref/hero_libro_mesa.jpg";
+import heroMomChild from "@/assets/calma-hero-mom-child.png.asset.json";
 import guiaPortada from "@/assets/ref/guia-portada.jpg";
 import guiaProtocolo from "@/assets/ref/guia-protocolo.jpg";
 import bonoTarjeta from "@/assets/ref/bono-tarjeta.jpg";
@@ -319,11 +319,11 @@ function Index() {
           <div className="relative">
             <div className="absolute inset-4 rounded-[2.5rem] bg-sky/40 blur-2xl" />
             <img
-              src={heroImg}
-              alt="Guía CALMA con tarjeta rápida, termómetro de la calma, rueda de emociones y diario de 30 días"
-              width={1440}
-              height={1440}
-              className="relative w-full rounded-[2rem] border border-border object-contain shadow-[0_40px_80px_-50px_oklch(0.5_0.06_250/0.6)]"
+              src={heroMomChild.url}
+              alt="Madre e hijo leyendo juntos un libro, en calma"
+              width={1536}
+              height={1024}
+              className="relative w-full rounded-[2rem] border border-border object-cover shadow-[0_40px_80px_-50px_oklch(0.5_0.06_250/0.6)]"
             />
           </div>
         </div>
