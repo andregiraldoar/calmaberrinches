@@ -6,7 +6,16 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import bundleImg from "@/assets/calma-bundle.jpg";
+import heroImg from "@/assets/ref/hero_libro_mesa.jpg";
+import guiaPortada from "@/assets/ref/guia-portada.jpg";
+import guiaProtocolo from "@/assets/ref/guia-protocolo.jpg";
+import bonoTarjeta from "@/assets/ref/bono-tarjeta.jpg";
+import bonoRueda from "@/assets/ref/bono-rueda.png";
+import bonoTermometro from "@/assets/ref/bono-termometro.png";
+import bonoDiario from "@/assets/ref/bono-diario.jpg";
+import bonoCuadernillo from "@/assets/ref/bono-cuadernillo.jpg";
+import bonoCalendario from "@/assets/ref/bono-calendario.jpg";
+import bonoContrato from "@/assets/ref/bono-contrato.jpg";
 import { trackInitiateCheckout } from "@/lib/tracking";
 
 export const Route = createFileRoute("/")({
