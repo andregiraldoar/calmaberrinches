@@ -165,14 +165,49 @@ const guideBullets = [
   "Señales de cuándo buscar ayuda profesional",
 ];
 
-const bonuses = [
-  ["Tarjeta Rápida CALMA", "Resumen imprimible para tener a la mano en el momento exacto.", "bg-sky"],
-  ["Rueda de Emociones", "Herramienta visual para que tu hijo/a identifique lo que siente.", "bg-butter"],
-  ["Termómetro de la Calma", "Para que tu hijo/a aprenda a regularse y calmarse por sí mismo/a.", "bg-coral"],
-  ["Diario de 30 Días", "Registro rellenable para descubrir los patrones reales de tu hijo/a.", "bg-mint"],
-  ["Cuadernillo ¿Está Bien o Está Mal?", "12 páginas rellenables para que tu hijo/a reconozca comportamientos.", "bg-lavender"],
-  ["Calendario de Logros", "Refuerzo positivo mensual, rellenable, para celebrar avances.", "bg-sky"],
-  ["Contrato Familiar de Límites", "Acuerdo rellenable entre padres e hijo/a sobre las reglas de casa.", "bg-mint"],
+const bonuses: { t: string; d: string; tone: string; img: string }[] = [
+  {
+    t: "Tarjeta Rápida CALMA",
+    d: "Resumen imprimible para tener a la mano en el momento exacto.",
+    tone: "bg-sky",
+    img: bonoTarjeta,
+  },
+  {
+    t: "Rueda de Emociones",
+    d: "Herramienta visual para que tu hijo/a identifique lo que siente.",
+    tone: "bg-butter",
+    img: bonoRueda,
+  },
+  {
+    t: "Termómetro de la Calma",
+    d: "Para que tu hijo/a aprenda a regularse y calmarse por sí mismo/a.",
+    tone: "bg-coral",
+    img: bonoTermometro,
+  },
+  {
+    t: "Diario de 30 Días",
+    d: "Registro rellenable para descubrir los patrones reales de tu hijo/a.",
+    tone: "bg-mint",
+    img: bonoDiario,
+  },
+  {
+    t: "Cuadernillo ¿Está Bien o Está Mal?",
+    d: "12 páginas rellenables para que tu hijo/a reconozca comportamientos.",
+    tone: "bg-lavender",
+    img: bonoCuadernillo,
+  },
+  {
+    t: "Calendario de Logros",
+    d: "Refuerzo positivo mensual, rellenable, para celebrar avances.",
+    tone: "bg-sky",
+    img: bonoCalendario,
+  },
+  {
+    t: "Contrato Familiar de Límites",
+    d: "Acuerdo rellenable entre padres e hijo/a sobre las reglas de casa.",
+    tone: "bg-mint",
+    img: bonoContrato,
+  },
 ];
 
 const insideItems = [
@@ -278,13 +313,13 @@ function Index() {
               </span>
             </div>
             <p className="mt-5 text-sm text-muted-foreground">
-              Psicóloga infantil Andrea Giraldo (TP 121151) · 13 páginas + 7 herramientas
+              Psicóloga Andrea Giraldo · 13 páginas + 7 herramientas
             </p>
           </div>
           <div className="relative">
             <div className="absolute inset-4 rounded-[2.5rem] bg-sky/40 blur-2xl" />
             <img
-              src={bundleImg}
+              src={heroImg}
               alt="Guía CALMA con tarjeta rápida, termómetro de la calma, rueda de emociones y diario de 30 días"
               width={1440}
               height={1440}
@@ -407,33 +442,57 @@ function Index() {
             Una guía completa, no solo teoría
           </h2>
 
-          <div className="mt-10 soft-card p-8">
-            <h3 className="text-2xl font-extrabold text-primary">📘 Guía CALMA (13 páginas)</h3>
-            <p className="mt-2 text-muted-foreground">
-              El protocolo completo, con frases exactas para cada situación.
-            </p>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2">
-              {guideBullets.map((b) => (
-                <li key={b} className="flex gap-3 text-muted-foreground">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky text-xs font-bold text-sky-foreground">
-                    ✓
-                  </span>
-                  {b}
-                </li>
-              ))}
-            </ul>
+          <div className="mt-10 soft-card grid gap-8 p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <h3 className="text-2xl font-extrabold text-primary">📘 Guía CALMA (13 páginas)</h3>
+              <p className="mt-2 text-muted-foreground">
+                El protocolo completo, con frases exactas para cada situación.
+              </p>
+              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+                {guideBullets.map((b) => (
+                  <li key={b} className="flex gap-3 text-muted-foreground">
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky text-xs font-bold text-sky-foreground">
+                      ✓
+                    </span>
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex gap-4 lg:w-[22rem]">
+              <img
+                src={guiaPortada}
+                alt="Portada de la Guía CALMA"
+                loading="lazy"
+                className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
+              />
+              <img
+                src={guiaProtocolo}
+                alt="Página interior con el Protocolo CALMA paso a paso"
+                loading="lazy"
+                className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
+              />
+            </div>
           </div>
 
           <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {bonuses.map(([t, d, tone], i) => (
-              <div key={t} className="soft-card p-6">
-                <span
-                  className={`flex h-10 w-10 items-center justify-center rounded-full font-display font-extrabold text-primary ${tone}`}
-                >
-                  {i + 1}
-                </span>
-                <h3 className="mt-4 text-lg font-bold text-primary">{t}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{d}</p>
+            {bonuses.map((b, i) => (
+              <div key={b.t} className="soft-card overflow-hidden">
+                <img
+                  src={b.img}
+                  alt={b.t}
+                  loading="lazy"
+                  className="aspect-[4/3] w-full bg-cream object-contain p-3"
+                />
+                <div className="p-6 pt-2">
+                  <span
+                    className={`flex h-10 w-10 items-center justify-center rounded-full font-display font-extrabold text-primary ${b.tone}`}
+                  >
+                    {i + 1}
+                  </span>
+                  <h3 className="mt-4 text-lg font-bold text-primary">{b.t}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{b.d}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -467,7 +526,7 @@ function Index() {
             </span>
             <div>
               <h3 className="text-xl font-bold text-primary">
-                Psicóloga Andrea Giraldo (TP 121151)
+                Psicóloga Andrea Giraldo
               </h3>
               <p className="mt-2 text-muted-foreground">
                 Esta guía está diseñada con base en principios establecidos de psicología del
@@ -613,8 +672,7 @@ function Index() {
             manera. FACEBOOK es una marca registrada de Meta, Inc.
           </p>
           <p>
-            © CALMA — Guía Profesional para Manejar Berrinches · Psicóloga Andrea Giraldo (TP
-            121151)
+            © CALMA — Guía Profesional para Manejar Berrinches · Psicóloga Andrea Giraldo
           </p>
         </div>
       </footer>
