@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import heroImg from "@/assets/ref/hero_libro_mesa.jpg";
+import heroLifestyle from "@/assets/calma-hero-lifestyle.png.asset.json";
 import guiaPortada from "@/assets/ref/guia-portada.jpg";
 import guiaProtocolo from "@/assets/ref/guia-protocolo.jpg";
 import bonoTarjeta from "@/assets/ref/bono-tarjeta.jpg";
