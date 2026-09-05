@@ -409,7 +409,7 @@ function Index() {
 
       {/* Benefits */}
       <section className="py-20">
-        <div className="mx-auto max-w-4xl px-5">
+        <div className="mx-auto max-w-4xl px-5 text-center">
           <Eyebrow tone="mint">Beneficios</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Qué vas a lograr con este protocolo
