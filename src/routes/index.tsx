@@ -818,10 +818,10 @@ function Index() {
           {/* Valor total */}
           <div className="mt-10 flex flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-border bg-lavender/40 px-8 py-7 text-center sm:flex-row sm:gap-6">
             <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
-              Valor total real:
+              27% de descuento por tiempo limitado
             </span>
             <span className="font-display text-2xl font-extrabold text-muted-foreground line-through">
-              $80.99 USD
+              $13.99 USD
             </span>
             <span className="text-2xl text-muted-foreground">→</span>
             <span className="font-display text-3xl font-extrabold text-coral-foreground">
