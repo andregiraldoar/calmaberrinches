@@ -305,7 +305,7 @@ function Index() {
         <div className="pointer-events-none absolute -right-20 top-40 h-80 w-80 rounded-full bg-coral/25 blur-3xl" />
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-2 lg:py-24">
           <div>
-            <Eyebrow tone="mint">Guía práctica para padres</Eyebrow>
+            <Eyebrow tone="mint">Guía profesional para padres de niños de 2 a 6 años</Eyebrow>
             <h1 className="mt-5 text-balance-tight font-display text-4xl font-extrabold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
               Cómo manejar los berrinches{" "}
               <span className="text-coral-foreground">sin gritos ni culpa</span>
