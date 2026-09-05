@@ -381,9 +381,6 @@ function Index() {
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground">
               <span className="flex items-center gap-1.5">
-                <span className="text-coral-foreground">💳</span> Paga a plazos con tarjeta
-              </span>
-              <span className="flex items-center gap-1.5">
                 <span className="text-mint-foreground">⚡</span> Acceso inmediato en tu correo
               </span>
               <span className="flex items-center gap-1.5">
