@@ -253,11 +253,36 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* Nav */}
-      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3.5">
-          <span className="font-display text-xl font-extrabold tracking-tight text-primary">
-            CALMA
-          </span>
+      <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur-md">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5">
+          <a href="#top" className="flex items-center gap-2.5">
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-coral text-coral-foreground">
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.453 9 12.75 9 12.75s9-5.297 9-12.75z" />
+              </svg>
+            </span>
+            <span className="flex flex-col leading-tight">
+              <span className="font-display text-sm font-extrabold text-primary">
+                CALMA
+              </span>
+              <span className="text-[11px] font-medium uppercase tracking-wider text-muted-foreground">
+                Guía para padres
+              </span>
+            </span>
+          </a>
+
+          <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground md:flex">
+            <a href="#protocolo" className="transition-colors hover:text-foreground">
+              El método
+            </a>
+            <a href="#que-recibes" className="transition-colors hover:text-foreground">
+              Qué recibes
+            </a>
+            <a href="#faq" className="transition-colors hover:text-foreground">
+              FAQ
+            </a>
+          </nav>
+
           <div className="flex items-center gap-4">
             <span className="hidden text-sm text-muted-foreground sm:inline">
               Antes <s>$13.99</s> · Hoy{" "}
@@ -266,7 +291,7 @@ function Index() {
             <a
               href={CHECKOUT}
               onClick={trackInitiateCheckout}
-              className="rounded-full bg-coral px-5 py-2.5 text-sm font-extrabold text-coral-foreground"
+              className="inline-flex items-center justify-center rounded-full bg-coral px-5 py-2.5 text-sm font-extrabold text-coral-foreground shadow-sm transition-all hover:bg-coral/90 hover:scale-[1.02] active:scale-[0.98]"
             >
               Obtener guía
             </a>
@@ -275,12 +300,12 @@ function Index() {
       </header>
 
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      <section id="top" className="relative overflow-hidden">
         <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-sky/50 blur-3xl" />
         <div className="pointer-events-none absolute -right-20 top-40 h-80 w-80 rounded-full bg-coral/25 blur-3xl" />
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-2 lg:py-24">
           <div>
-            <Eyebrow tone="mint">Guía práctica para padres</Eyebrow>
+            <Eyebrow tone="mint">Guía profesional para padres de niños de 2 a 6 años</Eyebrow>
             <h1 className="mt-5 text-balance-tight font-display text-4xl font-extrabold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
               Cómo manejar los berrinches{" "}
               <span className="text-coral-foreground">sin gritos ni culpa</span>
@@ -435,7 +460,7 @@ function Index() {
       </section>
 
       {/* What you get */}
-      <section className="bg-cream py-20">
+      <section id="que-recibes" className="bg-cream py-20">
         <div className="mx-auto max-w-6xl px-5">
           <Eyebrow tone="coral">Qué recibes</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
@@ -622,7 +647,7 @@ function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20">
+      <section id="faq" className="py-20">
         <div className="mx-auto max-w-3xl px-5">
           <Eyebrow tone="lavender">Preguntas frecuentes</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">

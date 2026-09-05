@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-const META_PIXEL_ID = "310181835505185";
+const META_PIXEL_ID = "1084449941254139";
 
 /**
  * Inject the Meta Pixel and StatCounter scripts once on the client and fire
