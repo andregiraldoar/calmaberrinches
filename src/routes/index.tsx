@@ -405,7 +405,7 @@ function Index() {
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {problems.map((p) => (
-              <div key={p.t} className="soft-card p-7">
+              <div key={p.t} className="soft-card flex h-full flex-col items-center p-7 text-center">
                 <div
                   className={`flex h-14 w-14 items-center justify-center rounded-2xl text-2xl ${p.tone}`}
                 >
@@ -428,7 +428,7 @@ function Index() {
           </h2>
           <ul className="mt-10 space-y-4">
             {benefits.map(([t, d]) => (
-              <li key={t} className="soft-card flex gap-4 p-6">
+              <li key={t} className="soft-card grid grid-cols-[auto_minmax(0,1fr)] items-start gap-4 p-6 text-left">
                 <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-mint font-bold text-mint-foreground">
                   ✓
                 </span>
@@ -510,7 +510,7 @@ function Index() {
           </h2>
 
           <div className="mt-10 soft-card grid gap-8 p-8 lg:grid-cols-[1fr_auto] lg:items-center">
-            <div>
+            <div className="text-center">
               <span className="inline-flex rounded-full bg-coral px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-coral-foreground">
                 Producto principal
               </span>
@@ -520,7 +520,7 @@ function Index() {
               <p className="mt-2 text-muted-foreground">
                 El protocolo completo, con frases exactas para cada situación.
               </p>
-              <ul className="mt-6 grid gap-3 sm:grid-cols-2">
+              <ul className="mt-6 grid gap-3 text-left sm:grid-cols-2">
                 {guideBullets.map((b) => (
                   <li key={b} className="flex gap-3 text-muted-foreground">
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky text-xs font-bold text-sky-foreground">
@@ -531,7 +531,7 @@ function Index() {
                 ))}
               </ul>
             </div>
-            <div className="flex gap-4 lg:w-[22rem]">
+            <div className="mx-auto flex w-full max-w-[22rem] gap-4">
               <img
                 src={guiaPortada}
                 alt="Portada de la Guía CALMA"
@@ -556,14 +556,14 @@ function Index() {
 
           <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {bonuses.map((b, i) => (
-              <div key={b.t} className="soft-card overflow-hidden">
+              <div key={b.t} className="soft-card flex h-full flex-col overflow-hidden text-center">
                 <img
                   src={b.img}
                   alt={b.t}
                   loading="lazy"
                   className="aspect-[4/3] w-full bg-cream object-contain p-3"
                 />
-                <div className="p-6 pt-2">
+                <div className="flex flex-1 flex-col items-center p-6 pt-2">
                   <span
                     className={`flex h-10 w-10 items-center justify-center rounded-full font-display font-extrabold text-primary ${b.tone}`}
                   >
@@ -588,8 +588,8 @@ function Index() {
             </p>
             <div className="mt-6 grid gap-5 md:grid-cols-3">
               {extras.map((e, i) => (
-                <div key={e.t} className="soft-card p-6">
-                  <div className="flex items-center gap-3">
+                <div key={e.t} className="soft-card flex h-full flex-col items-center p-6 text-center">
+                  <div className="flex flex-col items-center gap-2">
                     <span
                       className={`flex h-12 w-12 items-center justify-center rounded-full text-2xl ${e.tone}`}
                     >
@@ -642,11 +642,11 @@ function Index() {
             ))}
           </div>
 
-          <div className="mt-10 soft-card flex flex-col items-start gap-5 p-8 sm:flex-row sm:items-center">
+          <div className="mt-10 soft-card flex flex-col items-center gap-5 p-8 text-center">
             <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-lavender text-3xl">
               👩‍⚕️
             </span>
-            <div>
+            <div className="mx-auto max-w-3xl">
               <h3 className="text-xl font-bold text-primary">
                 Diseñada con base científica
               </h3>
@@ -688,7 +688,7 @@ function Index() {
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">Cómo funciona</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {howItWorks.map(([t, d], i) => (
-              <div key={t} className="soft-card p-7">
+              <div key={t} className="soft-card flex h-full flex-col items-center p-7 text-center">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-sky font-display text-lg font-extrabold text-sky-foreground">
                   {i + 1}
                 </span>
