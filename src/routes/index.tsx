@@ -722,13 +722,13 @@ function Index() {
             y 3 extras. Esto es todo lo que llega a tu correo de inmediato:
           </p>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_1.4fr] lg:items-start">
-            {/* Producto principal — imagen */}
-            <div className="soft-card flex flex-col items-center gap-5 p-7">
+          {/* Producto principal — imagen centrada bajo el título */}
+          <div className="mx-auto mt-12 max-w-2xl">
+            <div className="soft-card flex flex-col items-center gap-5 p-7 text-center">
               <span className="inline-flex rounded-full bg-coral px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-coral-foreground">
                 Producto principal
               </span>
-              <div className="flex gap-4">
+              <div className="flex w-full justify-center gap-4">
                 <img
                   src={guiaPortada}
                   alt="Portada de la Guía CALMA"
@@ -752,58 +752,58 @@ function Index() {
                 Valor: <span className="line-through">$13.99 USD</span>
               </p>
             </div>
+          </div>
 
-            {/* Listas de contenido */}
-            <div className="space-y-6">
-              {/* 7 bonos */}
-              <div className="soft-card p-7 text-left">
-                <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-butter-foreground">
-                  🎁 7 bonos incluidos
-                </p>
-                <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-                  {bonuses.map((b, i) => (
-                    <li key={b.t} className="flex items-start gap-3">
-                      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-mint text-sm font-bold text-mint-foreground">
-                        ✓
-                      </span>
-                      <div>
-                        <p className="text-sm font-bold text-primary">
-                          Bono {i + 1}: {b.t}
-                        </p>
-                        <p className="text-xs text-muted-foreground">{b.d}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-4 text-sm font-bold text-muted-foreground">
-                  Valor: <span className="line-through">$49.00 USD</span>
-                </p>
-              </div>
+          {/* 7 bonos + 3 extras */}
+          <div className="mt-8 grid gap-8 text-left lg:grid-cols-2">
+            {/* 7 bonos */}
+            <div className="soft-card p-7">
+              <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-butter-foreground">
+                🎁 7 bonos incluidos
+              </p>
+              <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                {bonuses.map((b, i) => (
+                  <li key={b.t} className="flex items-start gap-3">
+                    <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-mint text-sm font-bold text-mint-foreground">
+                      ✓
+                    </span>
+                    <div>
+                      <p className="text-sm font-bold text-primary">
+                        Bono {i + 1}: {b.t}
+                      </p>
+                      <p className="text-xs text-muted-foreground">{b.d}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm font-bold text-muted-foreground">
+                Valor: <span className="line-through">$49.00 USD</span>
+              </p>
+            </div>
 
-              {/* 3 extras */}
-              <div className="soft-card p-7 text-left">
-                <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-lavender-foreground">
-                  🎉 3 extras sorpresa
-                </p>
-                <ul className="mt-4 grid gap-3">
-                  {extras.map((e, i) => (
-                    <li key={e.t} className="flex items-start gap-3">
-                      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-lavender text-sm">
-                        {e.icon}
-                      </span>
-                      <div>
-                        <p className="text-sm font-bold text-primary">
-                          Extra {i + 1}: {e.t}
-                        </p>
-                        <p className="text-xs text-muted-foreground">{e.d}</p>
-                      </div>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-4 text-sm font-bold text-muted-foreground">
-                  Valor: <span className="line-through">$18.00 USD</span>
-                </p>
-              </div>
+            {/* 3 extras */}
+            <div className="soft-card p-7">
+              <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-lavender-foreground">
+                🎉 3 extras sorpresa
+              </p>
+              <ul className="mt-4 grid gap-3">
+                {extras.map((e, i) => (
+                  <li key={e.t} className="flex items-start gap-3">
+                    <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-lavender text-sm">
+                      {e.icon}
+                    </span>
+                    <div>
+                      <p className="text-sm font-bold text-primary">
+                        Extra {i + 1}: {e.t}
+                      </p>
+                      <p className="text-xs text-muted-foreground">{e.d}</p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm font-bold text-muted-foreground">
+                Valor: <span className="line-through">$18.00 USD</span>
+              </p>
             </div>
           </div>
 
@@ -830,7 +830,7 @@ function Index() {
               Valor total real:
             </span>
             <span className="font-display text-2xl font-extrabold text-muted-foreground line-through">
-              $80.98 USD
+              $80.99 USD
             </span>
             <span className="text-2xl text-muted-foreground">→</span>
             <span className="font-display text-3xl font-extrabold text-coral-foreground">
@@ -857,13 +857,13 @@ function Index() {
               Recupera la calma en tu hogar hoy
             </h2>
             <p className="mt-3 font-semibold text-coral-foreground">
-              27% de descuento por tiempo limitado
+              Más del 85% de descuento por tiempo limitado
             </p>
             <div className="mt-7">
               <Countdown />
             </div>
             <p className="mt-8 text-sm text-muted-foreground">
-              Antes <s>$13.99 USD</s>
+              Valor real <s>$80.99 USD</s>
             </p>
             <p className="font-display text-6xl font-extrabold text-primary">
               $9<span className="text-3xl">.99</span>
