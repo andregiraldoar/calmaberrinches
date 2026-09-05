@@ -210,15 +210,40 @@ const bonuses: { t: string; d: string; tone: string; img: string }[] = [
   },
 ];
 
+const extras: { t: string; d: string; icon: string; tone: string }[] = [
+  {
+    t: "Mini-guía: Rabietas al Dormir",
+    d: "Qué hacer cuando el berrinche llega justo a la hora de acostarse.",
+    icon: "🌙",
+    tone: "bg-lavender",
+  },
+  {
+    t: "Rutina Nocturna",
+    d: "Plantilla rellenable para construir una rutina de sueño predecible y tranquila.",
+    icon: "🛏️",
+    tone: "bg-sky",
+  },
+  {
+    t: "Plantilla de Seguimiento de Patrones",
+    d: "Registro rellenable para detectar qué dispara los berrinches y anticiparte.",
+    icon: "📊",
+    tone: "bg-butter",
+  },
+];
+
 const insideItems = [
-  "Guía CALMA",
-  "El Protocolo, paso a paso",
+  "Guía CALMA (producto principal)",
+  "El Protocolo de 5 pasos",
+  "Tarjeta Rápida CALMA",
   "Rueda de Emociones",
   "Termómetro de la Calma",
   "Diario de 30 Días (rellenable)",
-  "Cuadernillo (rellenable)",
+  "Cuadernillo ¿Está Bien o Está Mal?",
   "Calendario de Logros (rellenable)",
   "Contrato Familiar (rellenable)",
+  "Mini-guía Rabietas al Dormir",
+  "Rutina Nocturna (rellenable)",
+  "Seguimiento de Patrones (rellenable)",
 ];
 
 const testimonials = [
