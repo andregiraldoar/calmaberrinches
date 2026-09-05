@@ -373,7 +373,7 @@ function Index() {
             <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
               <span className="text-butter-foreground text-lg">★★★★★</span>
               <span className="text-sm font-bold text-muted-foreground">
-                4,7/5 — +300 padres ya la descargaron
+                4,7/5 — +300 padres ya la adquirieron
               </span>
             </div>
             <p className="mt-5 text-sm text-muted-foreground">
