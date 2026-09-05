@@ -271,7 +271,7 @@ const faqs: [string, string][] = [
   ["¿Funciona para cualquier edad?", "La guía está diseñada específicamente para niños de 2 a 6 años, con secciones diferenciadas según la etapa (2-3 años y 4-6 años)."],
   ["¿Necesito experiencia previa en crianza respetuosa?", "No. La guía explica todo desde cero, con lenguaje simple y frases listas para usar — no necesitas conocimientos previos."],
   ["¿En qué formato la recibo?", "Todo el material (guía + 7 bonos + 3 extras) llega en formato PDF, muchos de ellos rellenables directamente desde tu celular, tablet o computador, o para imprimir."],
-  ["¿Es un pago único o una suscripción?", "Es un pago único de $9.99 USD. Acceso de por vida, sin cobros recurrentes."],
+  ["¿Es un pago único o una suscripción?", "Es un pago único, con acceso de por vida y sin cobros recurrentes. Sin sorpresas."],
 ];
 
 function Index() {
