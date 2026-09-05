@@ -572,19 +572,49 @@ function Index() {
             ))}
           </div>
 
+          {/* Extras */}
+          <div className="mt-14">
+            <Eyebrow tone="lavender">🎉 3 extras sorpresa</Eyebrow>
+            <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
+              Bonos extra: noches sin berrinches
+            </h3>
+            <p className="mt-2 max-w-2xl text-muted-foreground">
+              Además de la guía y los 7 bonos, recibes 3 herramientas adicionales para las rabietas
+              de la noche y para anticiparte a los patrones de tu hijo/a.
+            </p>
+            <div className="mt-6 grid gap-5 md:grid-cols-3">
+              {extras.map((e, i) => (
+                <div key={e.t} className="soft-card p-6">
+                  <div className="flex items-center gap-3">
+                    <span
+                      className={`flex h-12 w-12 items-center justify-center rounded-full text-2xl ${e.tone}`}
+                    >
+                      {e.icon}
+                    </span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                      Extra {i + 1}
+                    </span>
+                  </div>
+                  <h4 className="mt-4 text-lg font-bold text-primary">{e.t}</h4>
+                  <p className="mt-2 text-sm text-muted-foreground">{e.d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Total bonus value */}
           <div className="mt-8 flex flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-border bg-lavender/40 px-8 py-6 text-center sm:flex-row sm:gap-6">
             <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
-              Total en bonos:
+              Total en bonos y extras:
             </span>
-            <span className="text-lg text-muted-foreground line-through">$48.00 USD</span>
+            <span className="text-lg text-muted-foreground line-through">$67.00 USD</span>
             <span className="font-display text-2xl font-extrabold text-coral-foreground">
               $0.00 para ti
             </span>
           </div>
 
           <div className="mt-8 text-center">
-            <Cta className="w-full sm:w-auto">Quiero la guía + los 7 bonos →</Cta>
+            <Cta className="w-full sm:w-auto">Quiero la guía + 7 bonos + 3 extras →</Cta>
           </div>
         </div>
       </section>
