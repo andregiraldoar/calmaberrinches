@@ -352,6 +352,14 @@ function Index() {
                 Ver cómo funciona
               </a>
             </div>
+            {/* Precio */}
+            <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span className="text-sm font-bold text-muted-foreground line-through">$13.99 USD</span>
+              <span className="font-display text-3xl font-extrabold text-coral-foreground">$9.99 USD</span>
+              <span className="rounded-full bg-coral/20 px-2.5 py-0.5 text-xs font-extrabold uppercase tracking-wider text-coral-foreground">
+                27% off
+              </span>
+            </div>
             {/* Social proof */}
             <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
               <span className="text-butter-foreground text-lg">★★★★★</span>
@@ -748,9 +756,6 @@ function Index() {
               <p className="text-sm text-muted-foreground">
                 13 páginas con frases exactas para cada momento de la crisis.
               </p>
-              <p className="text-sm font-bold text-muted-foreground">
-                Valor: <span className="line-through">$13.99 USD</span>
-              </p>
             </div>
           </div>
 
@@ -776,9 +781,6 @@ function Index() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm font-bold text-muted-foreground">
-                Valor: <span className="line-through">$49.00 USD</span>
-              </p>
             </div>
 
             {/* 3 extras */}
@@ -801,9 +803,6 @@ function Index() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm font-bold text-muted-foreground">
-                Valor: <span className="line-through">$18.00 USD</span>
-              </p>
             </div>
           </div>
 
@@ -827,10 +826,10 @@ function Index() {
           {/* Valor total */}
           <div className="mt-10 flex flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-border bg-lavender/40 px-8 py-7 text-center sm:flex-row sm:gap-6">
             <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
-              Valor total real:
+              27% de descuento por tiempo limitado
             </span>
             <span className="font-display text-2xl font-extrabold text-muted-foreground line-through">
-              $80.99 USD
+              $13.99 USD
             </span>
             <span className="text-2xl text-muted-foreground">→</span>
             <span className="font-display text-3xl font-extrabold text-coral-foreground">
@@ -857,13 +856,13 @@ function Index() {
               Recupera la calma en tu hogar hoy
             </h2>
             <p className="mt-3 font-semibold text-coral-foreground">
-              Más del 85% de descuento por tiempo limitado
+              27% de descuento por tiempo limitado
             </p>
             <div className="mt-7">
               <Countdown />
             </div>
             <p className="mt-8 text-sm text-muted-foreground">
-              Valor real <s>$80.99 USD</s>
+              Antes <s>$13.99 USD</s>
             </p>
             <p className="font-display text-6xl font-extrabold text-primary">
               $9<span className="text-3xl">.99</span>
