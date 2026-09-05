@@ -491,7 +491,7 @@ function Index() {
 
       {/* What you get */}
       <section id="que-recibes" className="bg-cream py-20">
-        <div className="mx-auto max-w-6xl px-5">
+        <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="coral">Qué recibes</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Una guía completa, no solo teoría
