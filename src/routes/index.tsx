@@ -730,12 +730,18 @@ function Index() {
             y 3 extras. Esto es todo lo que llega a tu correo de inmediato:
           </p>
 
-          {/* Producto principal — imagen centrada bajo el título */}
+          {/* Producto principal — título arriba, imagen debajo */}
           <div className="mx-auto mt-12 max-w-2xl">
             <div className="soft-card flex flex-col items-center gap-5 p-7 text-center">
               <span className="inline-flex rounded-full bg-coral px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-coral-foreground">
                 Producto principal
               </span>
+              <h3 className="text-xl font-extrabold text-primary">
+                📘 Guía CALMA — Protocolo de 5 pasos
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                13 páginas con frases exactas para cada momento de la crisis.
+              </p>
               <div className="flex w-full justify-center gap-4">
                 <img
                   src={guiaPortada}
@@ -750,12 +756,6 @@ function Index() {
                   className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
                 />
               </div>
-              <h3 className="text-xl font-extrabold text-primary">
-                📘 Guía CALMA — Protocolo de 5 pasos
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                13 páginas con frases exactas para cada momento de la crisis.
-              </p>
             </div>
           </div>
 
