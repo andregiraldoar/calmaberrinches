@@ -331,7 +331,7 @@ function Index() {
       <section id="top" className="relative overflow-hidden">
         <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-sky/50 blur-3xl" />
         <div className="pointer-events-none absolute -right-20 top-40 h-80 w-80 rounded-full bg-coral/25 blur-3xl" />
-        <div className="relative mx-auto flex max-w-3xl flex-col items-center gap-10 px-5 py-16 text-center lg:py-24">
+        <div className="relative mx-auto flex max-w-3xl flex-col items-center gap-8 px-5 py-16 text-center lg:py-24">
           <div className="flex flex-col items-center">
             <Eyebrow tone="mint">Guía profesional para padres de niños de 2 a 6 años</Eyebrow>
             <h1 className="mt-5 text-balance-tight font-display text-4xl font-extrabold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
@@ -343,7 +343,21 @@ function Index() {
               exactas, listo para aplicar hoy. Incluye la guía + 7 bonos + 3 extras, todo en PDF
               rellenable con acceso inmediato.
             </p>
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          </div>
+
+          <div className="relative w-full max-w-2xl">
+            <div className="absolute inset-4 rounded-[2.5rem] bg-sky/40 blur-2xl" />
+            <img
+              src={heroMomChild.url}
+              alt="Madre e hijo leyendo juntos un libro, en calma"
+              width={1536}
+              height={1024}
+              className="relative w-full rounded-[2rem] border border-border object-cover shadow-[0_40px_80px_-50px_oklch(0.5_0.06_250/0.6)]"
+            />
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="flex flex-wrap items-center justify-center gap-4">
               <Cta>Quiero mi guía CALMA →</Cta>
               <a
                 href="#protocolo"
@@ -378,16 +392,6 @@ function Index() {
                 <span className="text-lavender-foreground">🔒</span> Compra 100% segura
               </span>
             </div>
-          </div>
-          <div className="relative w-full max-w-2xl">
-            <div className="absolute inset-4 rounded-[2.5rem] bg-sky/40 blur-2xl" />
-            <img
-              src={heroMomChild.url}
-              alt="Madre e hijo leyendo juntos un libro, en calma"
-              width={1536}
-              height={1024}
-              className="relative w-full rounded-[2rem] border border-border object-cover shadow-[0_40px_80px_-50px_oklch(0.5_0.06_250/0.6)]"
-            />
           </div>
         </div>
       </section>
