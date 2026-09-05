@@ -252,6 +252,13 @@ const faqs: [string, string][] = [
 function Index() {
   return (
     <div className="min-h-screen bg-background">
+      {/* Offer banner */}
+      <div className="bg-coral text-coral-foreground">
+        <div className="mx-auto max-w-6xl px-5 py-2 text-center text-sm font-bold tracking-wide">
+          🎁 OFERTA LIMITADA — Acceso de por vida + 7 bonos exclusivos
+        </div>
+      </div>
+
       {/* Nav */}
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5">
@@ -337,9 +344,27 @@ function Index() {
                 antes <s>$13.99</s>
               </span>
             </div>
+            {/* Social proof */}
+            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
+              <span className="text-butter-foreground text-lg">★★★★★</span>
+              <span className="text-sm font-bold text-muted-foreground">
+                4,9/5 — +500 padres ya la descargaron
+              </span>
+            </div>
             <p className="mt-5 text-sm text-muted-foreground">
               Psicóloga Andrea Giraldo · 13 páginas + 7 herramientas
             </p>
+            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground">
+              <span className="flex items-center gap-1.5">
+                <span className="text-coral-foreground">💳</span> Paga a plazos con tarjeta
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="text-mint-foreground">⚡</span> Acceso inmediato en tu correo
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="text-lavender-foreground">🔒</span> Compra 100% segura
+              </span>
+            </div>
           </div>
           <div className="relative">
             <div className="absolute inset-4 rounded-[2.5rem] bg-sky/40 blur-2xl" />
@@ -521,10 +546,23 @@ function Index() {
               </div>
             ))}
           </div>
+
+          {/* Total bonus value */}
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-border bg-lavender/40 px-8 py-6 text-center sm:flex-row sm:gap-6">
+            <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
+              Total en bonos:
+            </span>
+            <span className="text-lg text-muted-foreground line-through">$48.00 USD</span>
+            <span className="font-display text-2xl font-extrabold text-coral-foreground">
+              $0.00 para ti
+            </span>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Cta className="w-full sm:w-auto">Quiero la guía + los 7 bonos →</Cta>
+          </div>
         </div>
       </section>
-
-      {/* Inside */}
       <section className="py-20">
         <div className="mx-auto max-w-6xl px-5">
           <Eyebrow tone="sky">Así se ve por dentro</Eyebrow>
@@ -599,6 +637,28 @@ function Index() {
                 <p className="mt-2 text-muted-foreground">{d}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Guarantee */}
+      <section className="py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <div className="soft-card flex flex-col items-center gap-6 p-8 text-center sm:p-12">
+            <span className="flex h-20 w-20 items-center justify-center rounded-full bg-mint text-4xl">
+              🛡️
+            </span>
+            <h2 className="text-3xl font-extrabold text-primary sm:text-4xl">
+              El riesgo es todo nuestro
+            </h2>
+            <p className="max-w-xl leading-relaxed text-muted-foreground">
+              Si descargas la guía CALMA y los 7 bonos y no te sirve, escríbeme en un plazo de{" "}
+              <strong className="text-foreground">7 días</strong> y te devuelvo el 100% de tu dinero.
+              Sin burocracia, sin preguntas.
+            </p>
+            <p className="text-sm font-bold text-coral-foreground">
+              Compra segura · Acceso inmediato · Garantía de 7 días
+            </p>
           </div>
         </div>
       </section>
