@@ -565,12 +565,12 @@ function Index() {
           </div>
 
           {/* Extras */}
-          <div className="mt-14">
+          <div className="mt-14 text-center">
             <Eyebrow tone="lavender">🎉 3 extras sorpresa</Eyebrow>
             <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
               Bonos extra: noches sin berrinches
             </h3>
-            <p className="mt-2 max-w-2xl text-muted-foreground">
+            <p className="mx-auto mt-2 max-w-2xl text-muted-foreground">
               Además de la guía y los 7 bonos, recibes 3 herramientas adicionales para las rabietas
               de la noche y para anticiparte a los patrones de tu hijo/a.
             </p>
