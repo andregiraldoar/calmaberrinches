@@ -355,20 +355,6 @@ function Index() {
                 Ver cómo funciona
               </a>
             </div>
-            <div className="mt-8 flex flex-wrap items-baseline gap-x-4 gap-y-2">
-              <span className="font-display text-4xl font-extrabold text-coral-foreground">
-                27%
-              </span>
-              <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
-                de descuento
-              </span>
-              <span className="rounded-full bg-cream px-4 py-1.5 font-display text-xl font-extrabold text-primary">
-                $9.99 USD
-              </span>
-              <span className="text-sm text-muted-foreground">
-                antes <s>$13.99</s>
-              </span>
-            </div>
             {/* Social proof */}
             <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
               <span className="text-butter-foreground text-lg">★★★★★</span>
