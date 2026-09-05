@@ -650,7 +650,7 @@ function Index() {
 
       {/* Testimonials */}
       <section className="bg-secondary/60 py-20">
-        <div className="mx-auto max-w-6xl px-5">
+        <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="butter">Testimonios</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Lo que dicen otros padres y madres
