@@ -386,9 +386,9 @@ function Index() {
 
       {/* Problem */}
       <section className="bg-cream py-20">
-        <div className="mx-auto max-w-6xl px-5">
+        <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="butter">¿Te resulta familiar?</Eyebrow>
-          <h2 className="mt-5 max-w-2xl text-3xl font-extrabold leading-tight text-primary sm:text-4xl">
+          <h2 className="mx-auto mt-5 max-w-2xl text-3xl font-extrabold leading-tight text-primary sm:text-4xl">
             El problema no es tu hijo. Es no saber qué hacer EN el momento.
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -409,7 +409,7 @@ function Index() {
 
       {/* Benefits */}
       <section className="py-20">
-        <div className="mx-auto max-w-4xl px-5">
+        <div className="mx-auto max-w-4xl px-5 text-center">
           <Eyebrow tone="mint">Beneficios</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Qué vas a lograr con este protocolo
@@ -459,7 +459,7 @@ function Index() {
 
       {/* Before / After */}
       <section className="py-20">
-        <div className="mx-auto max-w-5xl px-5">
+        <div className="mx-auto max-w-5xl px-5 text-center">
           <Eyebrow tone="lavender">La diferencia real</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             De la crisis a la calma
@@ -491,7 +491,7 @@ function Index() {
 
       {/* What you get */}
       <section id="que-recibes" className="bg-cream py-20">
-        <div className="mx-auto max-w-6xl px-5">
+        <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="coral">Qué recibes</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Una guía completa, no solo teoría
@@ -535,7 +535,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="mt-14">
+          <div className="mt-14 text-center">
             <Eyebrow tone="butter">🎁 7 bonos incluidos</Eyebrow>
             <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
               Herramientas prácticas para tu día a día
@@ -565,12 +565,12 @@ function Index() {
           </div>
 
           {/* Extras */}
-          <div className="mt-14">
+          <div className="mt-14 text-center">
             <Eyebrow tone="lavender">🎉 3 extras sorpresa</Eyebrow>
             <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
               Bonos extra: noches sin berrinches
             </h3>
-            <p className="mt-2 max-w-2xl text-muted-foreground">
+            <p className="mx-auto mt-2 max-w-2xl text-muted-foreground">
               Además de la guía y los 7 bonos, recibes 3 herramientas adicionales para las rabietas
               de la noche y para anticiparte a los patrones de tu hijo/a.
             </p>
@@ -611,12 +611,12 @@ function Index() {
         </div>
       </section>
       <section className="py-20">
-        <div className="mx-auto max-w-6xl px-5">
+        <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="sky">Así se ve por dentro</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Un vistazo real al contenido
           </h2>
-          <p className="mt-3 text-muted-foreground">
+          <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
             Esto es exactamente lo que vas a recibir — no es una simulación.
           </p>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -650,7 +650,7 @@ function Index() {
 
       {/* Testimonials */}
       <section className="bg-secondary/60 py-20">
-        <div className="mx-auto max-w-6xl px-5">
+        <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="butter">Testimonios</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Lo que dicen otros padres y madres
@@ -671,7 +671,7 @@ function Index() {
 
       {/* How it works */}
       <section className="py-20">
-        <div className="mx-auto max-w-5xl px-5">
+        <div className="mx-auto max-w-5xl px-5 text-center">
           <Eyebrow tone="mint">Así de simple</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">Cómo funciona</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
@@ -772,7 +772,7 @@ function Index() {
 
       {/* FAQ */}
       <section id="faq" className="py-20">
-        <div className="mx-auto max-w-3xl px-5">
+        <div className="mx-auto max-w-3xl px-5 text-center">
           <Eyebrow tone="lavender">Preguntas frecuentes</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Resolvemos tus dudas
