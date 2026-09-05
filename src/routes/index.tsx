@@ -641,6 +641,28 @@ function Index() {
         </div>
       </section>
 
+      {/* Guarantee */}
+      <section className="py-20">
+        <div className="mx-auto max-w-3xl px-5">
+          <div className="soft-card flex flex-col items-center gap-6 p-8 text-center sm:p-12">
+            <span className="flex h-20 w-20 items-center justify-center rounded-full bg-mint text-4xl">
+              🛡️
+            </span>
+            <h2 className="text-3xl font-extrabold text-primary sm:text-4xl">
+              El riesgo es todo nuestro
+            </h2>
+            <p className="max-w-xl leading-relaxed text-muted-foreground">
+              Si descargas la guía CALMA y los 7 bonos y no te sirve, escríbeme en un plazo de{" "}
+              <strong className="text-foreground">7 días</strong> y te devuelvo el 100% de tu dinero.
+              Sin burocracia, sin preguntas.
+            </p>
+            <p className="text-sm font-bold text-coral-foreground">
+              Compra segura · Acceso inmediato · Garantía de 7 días
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Offer */}
       <section className="bg-cream py-20">
         <div className="mx-auto max-w-3xl px-5">
