@@ -848,13 +848,13 @@ function Index() {
               Recupera la calma en tu hogar hoy
             </h2>
             <p className="mt-3 font-semibold text-coral-foreground">
-              Más del 85% de descuento por tiempo limitado
+              27% de descuento por tiempo limitado
             </p>
             <div className="mt-7">
               <Countdown />
             </div>
             <p className="mt-8 text-sm text-muted-foreground">
-              Valor real <s>$80.99 USD</s>
+              Antes <s>$13.99 USD</s>
             </p>
             <p className="font-display text-6xl font-extrabold text-primary">
               $9<span className="text-3xl">.99</span>
