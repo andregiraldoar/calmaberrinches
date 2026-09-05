@@ -331,8 +331,8 @@ function Index() {
       <section id="top" className="relative overflow-hidden">
         <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-sky/50 blur-3xl" />
         <div className="pointer-events-none absolute -right-20 top-40 h-80 w-80 rounded-full bg-coral/25 blur-3xl" />
-        <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-2 lg:py-24">
-          <div>
+        <div className="relative mx-auto flex max-w-3xl flex-col items-center gap-10 px-5 py-16 text-center lg:py-24">
+          <div className="flex flex-col items-center">
             <Eyebrow tone="mint">Guía profesional para padres de niños de 2 a 6 años</Eyebrow>
             <h1 className="mt-5 text-balance-tight font-display text-4xl font-extrabold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
               Cómo manejar los berrinches{" "}
@@ -343,7 +343,7 @@ function Index() {
               exactas, listo para aplicar hoy. Incluye la guía + 7 bonos + 3 extras, todo en PDF
               rellenable con acceso inmediato.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <Cta>Quiero mi guía CALMA →</Cta>
               <a
                 href="#protocolo"
@@ -353,7 +353,7 @@ function Index() {
               </a>
             </div>
             {/* Precio */}
-            <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <div className="mt-6 flex flex-wrap items-baseline justify-center gap-x-3 gap-y-1">
               <span className="text-sm font-bold text-muted-foreground line-through">$13.99 USD</span>
               <span className="font-display text-3xl font-extrabold text-coral-foreground">$9.99 USD</span>
               <span className="rounded-full bg-coral/20 px-2.5 py-0.5 text-xs font-extrabold uppercase tracking-wider text-coral-foreground">
@@ -361,7 +361,7 @@ function Index() {
               </span>
             </div>
             {/* Social proof */}
-            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
               <span className="text-butter-foreground text-lg">★★★★★</span>
               <span className="text-sm font-bold text-muted-foreground">
                 4,7/5 — +300 padres ya la adquirieron
@@ -370,7 +370,7 @@ function Index() {
             <p className="mt-5 text-sm text-muted-foreground">
               Guía de 13 páginas + 7 bonos + 3 extras
             </p>
-            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground">
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground">
               <span className="flex items-center gap-1.5">
                 <span className="text-mint-foreground">⚡</span> Acceso inmediato en tu correo
               </span>
@@ -379,7 +379,7 @@ function Index() {
               </span>
             </div>
           </div>
-          <div className="relative">
+          <div className="relative w-full max-w-2xl">
             <div className="absolute inset-4 rounded-[2.5rem] bg-sky/40 blur-2xl" />
             <img
               src={heroMomChild.url}
