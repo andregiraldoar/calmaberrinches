@@ -316,10 +316,6 @@ function Index() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <span className="hidden text-sm text-muted-foreground sm:inline">
-              Antes <s>$13.99</s> · Hoy{" "}
-              <strong className="text-foreground">$9.99 USD</strong>
-            </span>
             <a
               href={CHECKOUT}
               onClick={trackInitiateCheckout}
