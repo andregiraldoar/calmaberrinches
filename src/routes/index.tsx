@@ -788,7 +788,7 @@ function Index() {
               <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-lavender-foreground">
                 🎉 3 extras sorpresa
               </p>
-              <ul className="mt-4 grid flex-1 gap-3">
+              <ul className="mt-4 grid flex-1 content-between gap-3">
                 {extras.map((e, i) => (
                   <li key={e.t} className="flex items-start gap-3">
                     <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-lavender text-sm">
@@ -802,6 +802,9 @@ function Index() {
                     </div>
                   </li>
                 ))}
+                <li className="mt-2 rounded-xl bg-lavender/30 px-3 py-2 text-xs font-semibold text-lavender-foreground">
+                  Incluidos sin costo extra en tu compra de hoy
+                </li>
               </ul>
             </div>
           </div>
