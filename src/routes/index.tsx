@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Guía CALMA: protocolo de 5 pasos con frases exactas + 7 herramientas para padres de niños de 2 a 6 años. $9.99 USD, acceso inmediato.",
+          "Guía CALMA: protocolo de 5 pasos con frases exactas + 7 bonos + 3 extras para padres de niños de 2 a 6 años. $9.99 USD, acceso inmediato.",
       },
       { property: "og:title", content: "CALMA — Protocolo para berrinches sin gritos ni culpa" },
       {
@@ -263,14 +263,14 @@ const testimonials = [
 
 const howItWorks = [
   ["Compras de forma segura", "Pago único a través de Hotmart, con tarjeta o los métodos disponibles en tu país."],
-  ["Recibes todo en tu correo", "La guía + los 7 bonos llegan de inmediato como PDF, listos para abrir en tu celular o computador."],
+  ["Recibes todo en tu correo", "La guía, los 7 bonos y los 3 extras llegan de inmediato como PDF, listos para abrir en tu celular o computador."],
   ["Aplicas el protocolo hoy mismo", "Sin esperas ni configuraciones — desde el primer berrinche, ya sabes qué hacer."],
 ];
 
 const faqs: [string, string][] = [
   ["¿Funciona para cualquier edad?", "La guía está diseñada específicamente para niños de 2 a 6 años, con secciones diferenciadas según la etapa (2-3 años y 4-6 años)."],
   ["¿Necesito experiencia previa en crianza respetuosa?", "No. La guía explica todo desde cero, con lenguaje simple y frases listas para usar — no necesitas conocimientos previos."],
-  ["¿En qué formato la recibo?", "Todo el material (guía + 7 bonos) llega en formato PDF, muchos de ellos rellenables directamente desde tu celular, tablet o computador, o para imprimir."],
+  ["¿En qué formato la recibo?", "Todo el material (guía + 7 bonos + 3 extras) llega en formato PDF, muchos de ellos rellenables directamente desde tu celular, tablet o computador, o para imprimir."],
   ["¿Es un pago único o una suscripción?", "Es un pago único de $9.99 USD. Acceso de por vida, sin cobros recurrentes."],
 ];
 
@@ -719,7 +719,7 @@ function Index() {
               El riesgo es todo nuestro
             </h2>
             <p className="max-w-xl leading-relaxed text-muted-foreground">
-              Si descargas la guía CALMA y los 7 bonos y no te sirve, escríbeme en un plazo de{" "}
+              Si descargas la guía CALMA con sus 7 bonos y 3 extras y no te sirve, escríbeme en un plazo de{" "}
               <strong className="text-foreground">7 días</strong> y te devuelvo el 100% de tu dinero.
               Sin burocracia, sin preguntas.
             </p>
