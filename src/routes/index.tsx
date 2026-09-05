@@ -556,7 +556,10 @@ function Index() {
 
           <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {bonuses.map((b, i) => (
-              <div key={b.t} className="soft-card flex h-full flex-col overflow-hidden text-center">
+              <div
+                key={b.t}
+                className={`soft-card flex h-full flex-col overflow-hidden text-center ${i === bonuses.length - 1 ? "md:col-span-2 md:mx-auto md:w-[calc(50%-0.625rem)] lg:col-span-1 lg:col-start-2 lg:w-full" : ""}`}
+              >
                 <img
                   src={b.img}
                   alt={b.t}
@@ -927,7 +930,9 @@ function Index() {
                 <AccordionTrigger className="text-left text-base font-bold text-primary">
                   {q}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground">{a}</AccordionContent>
+                <AccordionContent className="text-left leading-relaxed text-muted-foreground">
+                  {a}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
