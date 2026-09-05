@@ -280,7 +280,7 @@ function Index() {
       {/* Offer banner */}
       <div className="bg-coral text-coral-foreground">
         <div className="mx-auto max-w-6xl px-5 py-2 text-center text-sm font-bold tracking-wide">
-          🎁 OFERTA LIMITADA — Acceso de por vida + 7 bonos exclusivos
+          🎁 OFERTA LIMITADA — Acceso de por vida + 7 bonos + 3 extras
         </div>
       </div>
 
@@ -377,7 +377,7 @@ function Index() {
               </span>
             </div>
             <p className="mt-5 text-sm text-muted-foreground">
-              Psicóloga Andrea Giraldo · 13 páginas + 7 herramientas
+              Psicóloga Andrea Giraldo · Guía de 13 páginas + 7 bonos + 3 extras
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground">
               <span className="flex items-center gap-1.5">
