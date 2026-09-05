@@ -535,7 +535,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="mt-14">
+          <div className="mt-14 text-center">
             <Eyebrow tone="butter">🎁 7 bonos incluidos</Eyebrow>
             <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
               Herramientas prácticas para tu día a día
