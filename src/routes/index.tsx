@@ -300,7 +300,7 @@ function Index() {
       </header>
 
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      <section id="top" className="relative overflow-hidden">
         <div className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-sky/50 blur-3xl" />
         <div className="pointer-events-none absolute -right-20 top-40 h-80 w-80 rounded-full bg-coral/25 blur-3xl" />
         <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-2 lg:py-24">
@@ -460,7 +460,7 @@ function Index() {
       </section>
 
       {/* What you get */}
-      <section className="bg-cream py-20">
+      <section id="que-recibes" className="bg-cream py-20">
         <div className="mx-auto max-w-6xl px-5">
           <Eyebrow tone="coral">Qué recibes</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
@@ -647,7 +647,7 @@ function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="py-20">
+      <section id="faq" className="py-20">
         <div className="mx-auto max-w-3xl px-5">
           <Eyebrow tone="lavender">Preguntas frecuentes</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
