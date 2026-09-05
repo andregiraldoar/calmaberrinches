@@ -546,10 +546,23 @@ function Index() {
               </div>
             ))}
           </div>
+
+          {/* Total bonus value */}
+          <div className="mt-8 flex flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-border bg-lavender/40 px-8 py-6 text-center sm:flex-row sm:gap-6">
+            <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
+              Total en bonos:
+            </span>
+            <span className="text-lg text-muted-foreground line-through">$48.00 USD</span>
+            <span className="font-display text-2xl font-extrabold text-coral-foreground">
+              $0.00 para ti
+            </span>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Cta className="w-full sm:w-auto">Quiero la guía + los 7 bonos →</Cta>
+          </div>
         </div>
       </section>
-
-      {/* Inside */}
       <section className="py-20">
         <div className="mx-auto max-w-6xl px-5">
           <Eyebrow tone="sky">Así se ve por dentro</Eyebrow>
