@@ -519,7 +519,12 @@ function Index() {
 
           <div className="mt-10 soft-card grid gap-8 p-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <h3 className="text-2xl font-extrabold text-primary">📘 Guía CALMA (13 páginas)</h3>
+              <span className="inline-flex rounded-full bg-coral px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-coral-foreground">
+                Producto principal
+              </span>
+              <h3 className="mt-3 text-2xl font-extrabold text-primary">
+                📘 Guía CALMA — Protocolo de 5 pasos (13 páginas)
+              </h3>
               <p className="mt-2 text-muted-foreground">
                 El protocolo completo, con frases exactas para cada situación.
               </p>
