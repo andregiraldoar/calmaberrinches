@@ -340,15 +340,8 @@ function Index() {
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
               Un protocolo concreto de 5 pasos para el momento exacto de la crisis — con frases
-              exactas, listo para aplicar hoy. Para padres de niños de 2 a 6 años.
-            </p>
-            <p className="mt-3 max-w-xl text-base leading-relaxed text-muted-foreground">
-              Recibes la <strong className="font-bold text-foreground">Guía CALMA</strong> (protocolo
-              de 5 pasos con frases listas para usar), <strong className="font-bold text-foreground">7 bonos</strong>{" "}
-              prácticos (tarjeta rápida, rueda de emociones, termómetro de la calma, diario de 30 días,
-              cuadernillo, calendario de logros y contrato familiar) y <strong className="font-bold text-foreground">3 extras</strong>{" "}
-              para las noches (rabietas al dormir, rutina nocturna y seguimiento de patrones). Todo en
-              PDF, rellenable y con acceso inmediato.
+              exactas, listo para aplicar hoy. Incluye la guía + 7 bonos + 3 extras, todo en PDF
+              rellenable con acceso inmediato.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Cta>Quiero mi guía CALMA →</Cta>
