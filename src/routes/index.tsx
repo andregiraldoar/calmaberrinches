@@ -748,9 +748,6 @@ function Index() {
               <p className="text-sm text-muted-foreground">
                 13 páginas con frases exactas para cada momento de la crisis.
               </p>
-              <p className="text-sm font-bold text-muted-foreground">
-                Valor: <span className="line-through">$13.99 USD</span>
-              </p>
             </div>
           </div>
 
