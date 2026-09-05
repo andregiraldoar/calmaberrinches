@@ -386,9 +386,9 @@ function Index() {
 
       {/* Problem */}
       <section className="bg-cream py-20">
-        <div className="mx-auto max-w-6xl px-5">
+        <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="butter">¿Te resulta familiar?</Eyebrow>
-          <h2 className="mt-5 max-w-2xl text-3xl font-extrabold leading-tight text-primary sm:text-4xl">
+          <h2 className="mx-auto mt-5 max-w-2xl text-3xl font-extrabold leading-tight text-primary sm:text-4xl">
             El problema no es tu hijo. Es no saber qué hacer EN el momento.
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
