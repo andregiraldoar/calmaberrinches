@@ -550,6 +550,13 @@ function Index() {
             </div>
           </div>
 
+          <div className="mt-14">
+            <Eyebrow tone="butter">🎁 7 bonos incluidos</Eyebrow>
+            <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
+              Herramientas prácticas para tu día a día
+            </h3>
+          </div>
+
           <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {bonuses.map((b, i) => (
               <div key={b.t} className="soft-card overflow-hidden">
