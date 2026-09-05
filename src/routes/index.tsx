@@ -252,6 +252,13 @@ const faqs: [string, string][] = [
 function Index() {
   return (
     <div className="min-h-screen bg-background">
+      {/* Offer banner */}
+      <div className="bg-coral text-coral-foreground">
+        <div className="mx-auto max-w-6xl px-5 py-2 text-center text-sm font-bold tracking-wide">
+          🎁 OFERTA LIMITADA — Acceso de por vida + 7 bonos exclusivos
+        </div>
+      </div>
+
       {/* Nav */}
       <header className="sticky top-0 z-40 border-b border-border/70 bg-background/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5">
@@ -337,9 +344,27 @@ function Index() {
                 antes <s>$13.99</s>
               </span>
             </div>
+            {/* Social proof */}
+            <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
+              <span className="text-butter-foreground text-lg">★★★★★</span>
+              <span className="text-sm font-bold text-muted-foreground">
+                4,9/5 — +500 padres ya la descargaron
+              </span>
+            </div>
             <p className="mt-5 text-sm text-muted-foreground">
               Psicóloga Andrea Giraldo · 13 páginas + 7 herramientas
             </p>
+            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground">
+              <span className="flex items-center gap-1.5">
+                <span className="text-coral-foreground">💳</span> Paga a plazos con tarjeta
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="text-mint-foreground">⚡</span> Acceso inmediato en tu correo
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="text-lavender-foreground">🔒</span> Compra 100% segura
+              </span>
+            </div>
           </div>
           <div className="relative">
             <div className="absolute inset-4 rounded-[2.5rem] bg-sky/40 blur-2xl" />
