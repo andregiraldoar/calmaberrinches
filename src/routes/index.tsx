@@ -476,14 +476,14 @@ function Index() {
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             De la crisis a la calma
           </h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-2">
+          <div className="mx-auto mt-10 grid max-w-4xl gap-6 sm:grid-cols-2">
             <div className="rounded-[1.75rem] border border-border bg-accent/60 p-7">
               <p className="text-sm font-extrabold uppercase tracking-widest text-accent-foreground">
                 Antes
               </p>
-              <ul className="mt-5 space-y-3 text-muted-foreground">
+              <ul className="mx-auto mt-5 max-w-sm space-y-3 text-left text-muted-foreground">
                 {before.map((b) => (
-                  <li key={b}>{b}</li>
+                  <li key={b} className="leading-relaxed">{b}</li>
                 ))}
               </ul>
             </div>
@@ -491,9 +491,9 @@ function Index() {
               <p className="text-sm font-extrabold uppercase tracking-widest text-mint-foreground">
                 Después
               </p>
-              <ul className="mt-5 space-y-3 text-muted-foreground">
+              <ul className="mx-auto mt-5 max-w-sm space-y-3 text-left text-muted-foreground">
                 {after.map((b) => (
-                  <li key={b}>{b}</li>
+                  <li key={b} className="leading-relaxed">{b}</li>
                 ))}
               </ul>
             </div>
