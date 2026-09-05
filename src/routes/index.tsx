@@ -32,7 +32,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Protocolo de 5 pasos con frases exactas, listo para aplicar hoy. Creado por la Psicóloga Andrea Giraldo.",
+          "Protocolo de 5 pasos con frases exactas, listo para aplicar hoy. Guía práctica para padres de niños de 2 a 6 años.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -373,11 +373,11 @@ function Index() {
             <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
               <span className="text-butter-foreground text-lg">★★★★★</span>
               <span className="text-sm font-bold text-muted-foreground">
-                4,9/5 — +500 padres ya la descargaron
+                4,7/5 — +300 padres ya la descargaron
               </span>
             </div>
             <p className="mt-5 text-sm text-muted-foreground">
-              Psicóloga Andrea Giraldo · Guía de 13 páginas + 7 bonos + 3 extras
+              Guía de 13 páginas + 7 bonos + 3 extras
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground">
               <span className="flex items-center gap-1.5">
@@ -656,7 +656,7 @@ function Index() {
             </span>
             <div>
               <h3 className="text-xl font-bold text-primary">
-                Psicóloga Andrea Giraldo
+                Diseñada con base científica
               </h3>
               <p className="mt-2 text-muted-foreground">
                 Esta guía está diseñada con base en principios establecidos de psicología del
@@ -824,7 +824,7 @@ function Index() {
             manera. FACEBOOK es una marca registrada de Meta, Inc.
           </p>
           <p>
-            © CALMA — Guía Profesional para Manejar Berrinches · Psicóloga Andrea Giraldo
+            © CALMA — Guía Profesional para Manejar Berrinches
           </p>
         </div>
       </footer>
