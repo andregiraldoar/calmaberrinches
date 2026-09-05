@@ -830,7 +830,7 @@ function Index() {
               Valor total real:
             </span>
             <span className="font-display text-2xl font-extrabold text-muted-foreground line-through">
-              $80.98 USD
+              $80.99 USD
             </span>
             <span className="text-2xl text-muted-foreground">→</span>
             <span className="font-display text-3xl font-extrabold text-coral-foreground">
