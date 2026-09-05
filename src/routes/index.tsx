@@ -710,6 +710,144 @@ function Index() {
         </div>
       </section>
 
+      {/* Recapitulación */}
+      <section className="bg-secondary/60 py-20">
+        <div className="mx-auto max-w-6xl px-5 text-center">
+          <Eyebrow tone="coral">Recapitulación</Eyebrow>
+          <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
+            Recapitulemos todo lo que <span className="text-coral-foreground">te llevarás</span>
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            No es solo una guía — por este precio te llevas el protocolo completo, 7 bonos prácticos
+            y 3 extras. Esto es todo lo que llega a tu correo de inmediato:
+          </p>
+
+          <div className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_1.4fr] lg:items-start">
+            {/* Producto principal — imagen */}
+            <div className="soft-card flex flex-col items-center gap-5 p-7">
+              <span className="inline-flex rounded-full bg-coral px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-coral-foreground">
+                Producto principal
+              </span>
+              <div className="flex gap-4">
+                <img
+                  src={guiaPortada}
+                  alt="Portada de la Guía CALMA"
+                  loading="lazy"
+                  className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
+                />
+                <img
+                  src={guiaProtocolo}
+                  alt="Página interior del Protocolo CALMA"
+                  loading="lazy"
+                  className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
+                />
+              </div>
+              <h3 className="text-xl font-extrabold text-primary">
+                📘 Guía CALMA — Protocolo de 5 pasos
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                13 páginas con frases exactas para cada momento de la crisis.
+              </p>
+              <p className="text-sm font-bold text-muted-foreground">
+                Valor: <span className="line-through">$13.99 USD</span>
+              </p>
+            </div>
+
+            {/* Listas de contenido */}
+            <div className="space-y-6">
+              {/* 7 bonos */}
+              <div className="soft-card p-7 text-left">
+                <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-butter-foreground">
+                  🎁 7 bonos incluidos
+                </p>
+                <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                  {bonuses.map((b, i) => (
+                    <li key={b.t} className="flex items-start gap-3">
+                      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-mint text-sm font-bold text-mint-foreground">
+                        ✓
+                      </span>
+                      <div>
+                        <p className="text-sm font-bold text-primary">
+                          Bono {i + 1}: {b.t}
+                        </p>
+                        <p className="text-xs text-muted-foreground">{b.d}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 text-sm font-bold text-muted-foreground">
+                  Valor: <span className="line-through">$49.00 USD</span>
+                </p>
+              </div>
+
+              {/* 3 extras */}
+              <div className="soft-card p-7 text-left">
+                <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-lavender-foreground">
+                  🎉 3 extras sorpresa
+                </p>
+                <ul className="mt-4 grid gap-3">
+                  {extras.map((e, i) => (
+                    <li key={e.t} className="flex items-start gap-3">
+                      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-lavender text-sm">
+                        {e.icon}
+                      </span>
+                      <div>
+                        <p className="text-sm font-bold text-primary">
+                          Extra {i + 1}: {e.t}
+                        </p>
+                        <p className="text-xs text-muted-foreground">{e.d}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-4 text-sm font-bold text-muted-foreground">
+                  Valor: <span className="line-through">$18.00 USD</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Thumbnails de bonos */}
+          <div className="mt-10 grid grid-cols-4 gap-3 sm:grid-cols-7">
+            {bonuses.map((b, i) => (
+              <div key={b.t} className="overflow-hidden rounded-2xl border border-border bg-card">
+                <img
+                  src={b.img}
+                  alt={b.t}
+                  loading="lazy"
+                  className="aspect-square w-full bg-cream object-contain p-2"
+                />
+                <p className="px-1 pb-2 pt-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
+                  Bono {i + 1}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Valor total */}
+          <div className="mt-10 flex flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-border bg-lavender/40 px-8 py-7 text-center sm:flex-row sm:gap-6">
+            <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
+              Valor total real:
+            </span>
+            <span className="font-display text-2xl font-extrabold text-muted-foreground line-through">
+              $80.98 USD
+            </span>
+            <span className="text-2xl text-muted-foreground">→</span>
+            <span className="font-display text-3xl font-extrabold text-coral-foreground">
+              $9.99 USD
+            </span>
+          </div>
+
+          <div className="mt-6 text-sm font-bold text-muted-foreground">
+            Producto principal + 7 bonos + 3 extras incluidos
+          </div>
+
+          <div className="mt-8">
+            <Cta>Quiero todo el paquete CALMA →</Cta>
+          </div>
+        </div>
+      </section>
+
       {/* Offer */}
       <section className="bg-cream py-20">
         <div className="mx-auto max-w-3xl px-5">
