@@ -671,7 +671,7 @@ function Index() {
 
       {/* How it works */}
       <section className="py-20">
-        <div className="mx-auto max-w-5xl px-5">
+        <div className="mx-auto max-w-5xl px-5 text-center">
           <Eyebrow tone="mint">Así de simple</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">Cómo funciona</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
