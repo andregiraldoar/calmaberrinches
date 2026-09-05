@@ -760,13 +760,13 @@ function Index() {
           </div>
 
           {/* 7 bonos + 3 extras */}
-          <div className="mt-8 grid gap-8 text-left lg:grid-cols-2">
+          <div className="mt-8 grid items-stretch gap-6 text-left lg:grid-cols-2">
             {/* 7 bonos */}
-            <div className="soft-card p-7">
+            <div className="soft-card flex h-full flex-col p-7">
               <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-butter-foreground">
                 🎁 7 bonos incluidos
               </p>
-              <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              <ul className="mt-4 grid flex-1 gap-3 sm:grid-cols-2">
                 {bonuses.map((b, i) => (
                   <li key={b.t} className="flex items-start gap-3">
                     <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-mint text-sm font-bold text-mint-foreground">
@@ -784,11 +784,11 @@ function Index() {
             </div>
 
             {/* 3 extras */}
-            <div className="soft-card p-7">
+            <div className="soft-card flex h-full flex-col p-7">
               <p className="flex items-center gap-2 text-sm font-extrabold uppercase tracking-widest text-lavender-foreground">
                 🎉 3 extras sorpresa
               </p>
-              <ul className="mt-4 grid gap-3">
+              <ul className="mt-4 grid flex-1 gap-3">
                 {extras.map((e, i) => (
                   <li key={e.t} className="flex items-start gap-3">
                     <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-lavender text-sm">
