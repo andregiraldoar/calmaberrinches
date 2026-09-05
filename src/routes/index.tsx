@@ -459,7 +459,7 @@ function Index() {
 
       {/* Before / After */}
       <section className="py-20">
-        <div className="mx-auto max-w-5xl px-5">
+        <div className="mx-auto max-w-5xl px-5 text-center">
           <Eyebrow tone="lavender">La diferencia real</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             De la crisis a la calma
