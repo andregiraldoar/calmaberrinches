@@ -762,6 +762,23 @@ function Index() {
                 </div>
               ))}
             </div>
+            <div className="mt-8 rounded-2xl bg-secondary/70 p-5 text-left">
+              <p className="text-sm font-extrabold uppercase tracking-wider text-lavender-foreground">
+                🎉 3 extras sorpresa incluidos
+              </p>
+              <ul className="mt-3 space-y-2">
+                {extras.map((e) => (
+                  <li key={e.t} className="flex items-start gap-2.5 text-sm text-muted-foreground">
+                    <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-lavender text-xs">
+                      {e.icon}
+                    </span>
+                    <span>
+                      <strong className="text-foreground">{e.t}</strong> — {e.d}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
             <Cta className="mt-8 w-full">Quiero mi guía CALMA ahora</Cta>
             <p className="mt-4 text-xs text-muted-foreground">
               🔒 Compra 100% segura · Acceso inmediato en tu correo
