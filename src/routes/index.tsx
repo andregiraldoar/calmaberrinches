@@ -26,7 +26,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Guía CALMA: protocolo de 5 pasos con frases exactas + 7 herramientas para padres de niños de 2 a 6 años. $9.99 USD, acceso inmediato.",
+          "Guía CALMA: protocolo de 5 pasos con frases exactas + 7 bonos + 3 extras para padres de niños de 2 a 6 años. $9.99 USD, acceso inmediato.",
       },
       { property: "og:title", content: "CALMA — Protocolo para berrinches sin gritos ni culpa" },
       {
@@ -210,15 +210,40 @@ const bonuses: { t: string; d: string; tone: string; img: string }[] = [
   },
 ];
 
+const extras: { t: string; d: string; icon: string; tone: string }[] = [
+  {
+    t: "Mini-guía: Rabietas al Dormir",
+    d: "Qué hacer cuando el berrinche llega justo a la hora de acostarse.",
+    icon: "🌙",
+    tone: "bg-lavender",
+  },
+  {
+    t: "Rutina Nocturna",
+    d: "Plantilla rellenable para construir una rutina de sueño predecible y tranquila.",
+    icon: "🛏️",
+    tone: "bg-sky",
+  },
+  {
+    t: "Plantilla de Seguimiento de Patrones",
+    d: "Registro rellenable para detectar qué dispara los berrinches y anticiparte.",
+    icon: "📊",
+    tone: "bg-butter",
+  },
+];
+
 const insideItems = [
-  "Guía CALMA",
-  "El Protocolo, paso a paso",
+  "Guía CALMA (producto principal)",
+  "El Protocolo de 5 pasos",
+  "Tarjeta Rápida CALMA",
   "Rueda de Emociones",
   "Termómetro de la Calma",
   "Diario de 30 Días (rellenable)",
-  "Cuadernillo (rellenable)",
+  "Cuadernillo ¿Está Bien o Está Mal?",
   "Calendario de Logros (rellenable)",
   "Contrato Familiar (rellenable)",
+  "Mini-guía Rabietas al Dormir",
+  "Rutina Nocturna (rellenable)",
+  "Seguimiento de Patrones (rellenable)",
 ];
 
 const testimonials = [
@@ -238,14 +263,14 @@ const testimonials = [
 
 const howItWorks = [
   ["Compras de forma segura", "Pago único a través de Hotmart, con tarjeta o los métodos disponibles en tu país."],
-  ["Recibes todo en tu correo", "La guía + los 7 bonos llegan de inmediato como PDF, listos para abrir en tu celular o computador."],
+  ["Recibes todo en tu correo", "La guía, los 7 bonos y los 3 extras llegan de inmediato como PDF, listos para abrir en tu celular o computador."],
   ["Aplicas el protocolo hoy mismo", "Sin esperas ni configuraciones — desde el primer berrinche, ya sabes qué hacer."],
 ];
 
 const faqs: [string, string][] = [
   ["¿Funciona para cualquier edad?", "La guía está diseñada específicamente para niños de 2 a 6 años, con secciones diferenciadas según la etapa (2-3 años y 4-6 años)."],
   ["¿Necesito experiencia previa en crianza respetuosa?", "No. La guía explica todo desde cero, con lenguaje simple y frases listas para usar — no necesitas conocimientos previos."],
-  ["¿En qué formato la recibo?", "Todo el material (guía + 7 bonos) llega en formato PDF, muchos de ellos rellenables directamente desde tu celular, tablet o computador, o para imprimir."],
+  ["¿En qué formato la recibo?", "Todo el material (guía + 7 bonos + 3 extras) llega en formato PDF, muchos de ellos rellenables directamente desde tu celular, tablet o computador, o para imprimir."],
   ["¿Es un pago único o una suscripción?", "Es un pago único de $9.99 USD. Acceso de por vida, sin cobros recurrentes."],
 ];
 
@@ -255,7 +280,7 @@ function Index() {
       {/* Offer banner */}
       <div className="bg-coral text-coral-foreground">
         <div className="mx-auto max-w-6xl px-5 py-2 text-center text-sm font-bold tracking-wide">
-          🎁 OFERTA LIMITADA — Acceso de por vida + 7 bonos exclusivos
+          🎁 OFERTA LIMITADA — Acceso de por vida + 7 bonos + 3 extras
         </div>
       </div>
 
@@ -352,7 +377,7 @@ function Index() {
               </span>
             </div>
             <p className="mt-5 text-sm text-muted-foreground">
-              Psicóloga Andrea Giraldo · 13 páginas + 7 herramientas
+              Psicóloga Andrea Giraldo · Guía de 13 páginas + 7 bonos + 3 extras
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-semibold text-muted-foreground">
               <span className="flex items-center gap-1.5">
@@ -494,7 +519,12 @@ function Index() {
 
           <div className="mt-10 soft-card grid gap-8 p-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <h3 className="text-2xl font-extrabold text-primary">📘 Guía CALMA (13 páginas)</h3>
+              <span className="inline-flex rounded-full bg-coral px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-coral-foreground">
+                Producto principal
+              </span>
+              <h3 className="mt-3 text-2xl font-extrabold text-primary">
+                📘 Guía CALMA — Protocolo de 5 pasos (13 páginas)
+              </h3>
               <p className="mt-2 text-muted-foreground">
                 El protocolo completo, con frases exactas para cada situación.
               </p>
@@ -525,6 +555,13 @@ function Index() {
             </div>
           </div>
 
+          <div className="mt-14">
+            <Eyebrow tone="butter">🎁 7 bonos incluidos</Eyebrow>
+            <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
+              Herramientas prácticas para tu día a día
+            </h3>
+          </div>
+
           <div className="mt-6 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {bonuses.map((b, i) => (
               <div key={b.t} className="soft-card overflow-hidden">
@@ -547,19 +584,49 @@ function Index() {
             ))}
           </div>
 
+          {/* Extras */}
+          <div className="mt-14">
+            <Eyebrow tone="lavender">🎉 3 extras sorpresa</Eyebrow>
+            <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
+              Bonos extra: noches sin berrinches
+            </h3>
+            <p className="mt-2 max-w-2xl text-muted-foreground">
+              Además de la guía y los 7 bonos, recibes 3 herramientas adicionales para las rabietas
+              de la noche y para anticiparte a los patrones de tu hijo/a.
+            </p>
+            <div className="mt-6 grid gap-5 md:grid-cols-3">
+              {extras.map((e, i) => (
+                <div key={e.t} className="soft-card p-6">
+                  <div className="flex items-center gap-3">
+                    <span
+                      className={`flex h-12 w-12 items-center justify-center rounded-full text-2xl ${e.tone}`}
+                    >
+                      {e.icon}
+                    </span>
+                    <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
+                      Extra {i + 1}
+                    </span>
+                  </div>
+                  <h4 className="mt-4 text-lg font-bold text-primary">{e.t}</h4>
+                  <p className="mt-2 text-sm text-muted-foreground">{e.d}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Total bonus value */}
           <div className="mt-8 flex flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-border bg-lavender/40 px-8 py-6 text-center sm:flex-row sm:gap-6">
             <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
-              Total en bonos:
+              Total en bonos y extras:
             </span>
-            <span className="text-lg text-muted-foreground line-through">$48.00 USD</span>
+            <span className="text-lg text-muted-foreground line-through">$67.00 USD</span>
             <span className="font-display text-2xl font-extrabold text-coral-foreground">
               $0.00 para ti
             </span>
           </div>
 
           <div className="mt-8 text-center">
-            <Cta className="w-full sm:w-auto">Quiero la guía + los 7 bonos →</Cta>
+            <Cta className="w-full sm:w-auto">Quiero la guía + 7 bonos + 3 extras →</Cta>
           </div>
         </div>
       </section>
@@ -652,7 +719,7 @@ function Index() {
               El riesgo es todo nuestro
             </h2>
             <p className="max-w-xl leading-relaxed text-muted-foreground">
-              Si descargas la guía CALMA y los 7 bonos y no te sirve, escríbeme en un plazo de{" "}
+              Si descargas la guía CALMA con sus 7 bonos y 3 extras y no te sirve, escríbeme en un plazo de{" "}
               <strong className="text-foreground">7 días</strong> y te devuelvo el 100% de tu dinero.
               Sin burocracia, sin preguntas.
             </p>
