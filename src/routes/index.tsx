@@ -611,12 +611,12 @@ function Index() {
         </div>
       </section>
       <section className="py-20">
-        <div className="mx-auto max-w-6xl px-5">
+        <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="sky">Así se ve por dentro</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             Un vistazo real al contenido
           </h2>
-          <p className="mt-3 text-muted-foreground">
+          <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
             Esto es exactamente lo que vas a recibir — no es una simulación.
           </p>
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
