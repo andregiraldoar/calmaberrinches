@@ -773,9 +773,6 @@ function Index() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm font-bold text-muted-foreground">
-                Valor: <span className="line-through">$49.00 USD</span>
-              </p>
             </div>
 
             {/* 3 extras */}
