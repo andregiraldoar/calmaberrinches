@@ -582,6 +582,33 @@ function Index() {
           </div>
         </div>
       </section>
+
+      {/* Resumen de valor antes del vistazo al contenido */}
+      <section className="py-16">
+        <div className="mx-auto max-w-3xl px-5 text-center">
+          <div className="soft-card flex flex-col items-center gap-5 p-8 text-center sm:p-10">
+            <Eyebrow tone="coral">Todo lo que vas a recibir</Eyebrow>
+            <h3 className="text-2xl font-extrabold text-primary sm:text-3xl">
+              Guía CALMA + 7 herramientas + 3 extras
+            </h3>
+            <ul className="mx-auto grid max-w-xl gap-2 text-left text-sm text-muted-foreground sm:grid-cols-2">
+              <li className="flex items-center gap-2"><span className="text-mint-foreground">✓</span> Guía de 13 páginas</li>
+              <li className="flex items-center gap-2"><span className="text-mint-foreground">✓</span> 7 bonos prácticos</li>
+              <li className="flex items-center gap-2"><span className="text-mint-foreground">✓</span> 3 extras sorpresa</li>
+              <li className="flex items-center gap-2"><span className="text-mint-foreground">✓</span> Acceso inmediato</li>
+            </ul>
+            <div className="flex flex-wrap items-baseline justify-center gap-x-3 gap-y-1">
+              <span className="text-base font-bold text-muted-foreground line-through">$13.99 USD</span>
+              <span className="font-display text-4xl font-extrabold text-coral-foreground">$9.99 USD</span>
+              <span className="rounded-full bg-coral/20 px-2.5 py-0.5 text-xs font-extrabold uppercase tracking-wider text-coral-foreground">
+                27% off
+              </span>
+            </div>
+            <Cta className="w-full sm:w-auto">QUIERO MI GUÍA CALMA →</Cta>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20">
         <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="sky">Así se ve por dentro</Eyebrow>
