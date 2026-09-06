@@ -348,12 +348,6 @@ function Index() {
                 27% off
               </span>
             </div>
-            {/* Social proof */}
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-              <span className="text-sm font-bold text-muted-foreground">
-                Guía + 7 herramientas + 3 extras · todo en PDF rellenable
-              </span>
-            </div>
             <p className="mt-5 text-sm text-muted-foreground">
               Guía de 13 páginas + 7 bonos + 3 extras
             </p>
@@ -582,16 +576,6 @@ function Index() {
             </div>
           </div>
 
-          {/* Total bonus value */}
-          <div className="mt-8 flex flex-col items-center justify-center gap-3 rounded-[1.75rem] border border-border bg-lavender/40 px-8 py-6 text-center sm:flex-row sm:gap-6">
-            <span className="text-sm font-bold uppercase tracking-widest text-muted-foreground">
-              Total en bonos y extras:
-            </span>
-            <span className="text-lg text-muted-foreground line-through">$67.00 USD</span>
-            <span className="font-display text-2xl font-extrabold text-coral-foreground">
-              $0.00 para ti
-            </span>
-          </div>
 
           <div className="mt-8 text-center">
             <Cta className="w-full sm:w-auto">Quiero la guía + 7 bonos + 3 extras →</Cta>
