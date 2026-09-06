@@ -7,9 +7,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import heroMomChild from "@/assets/calma-hero-mom-child.png.asset.json";
-import guiaPortada from "@/assets/ref/guia-portada.jpg";
-import guiaProtocolo from "@/assets/ref/guia-protocolo.jpg";
-import bonoTarjeta from "@/assets/ref/bono-tarjeta.jpg";
+import guiaPortada from "@/assets/ref/guia-portada-actualizada.webp.asset.json";
+import guiaProtocolo from "@/assets/ref/guia-protocolo-actualizada.webp.asset.json";
+import bonoTarjeta from "@/assets/ref/bono-tarjeta-actualizada.webp.asset.json";
 import bonoRueda from "@/assets/ref/bono-rueda.png";
 import bonoTermometro from "@/assets/ref/bono-termometro.png";
 import bonoDiario from "@/assets/ref/bono-diario.jpg";
@@ -142,7 +142,7 @@ const bonuses: { t: string; d: string; tone: string; img: string }[] = [
     t: "Tarjeta Rápida CALMA",
     d: "Resumen imprimible para tener a la mano en el momento exacto.",
     tone: "bg-sky",
-    img: bonoTarjeta,
+    img: bonoTarjeta.url,
   },
   {
     t: "Rueda de Emociones",
@@ -500,13 +500,13 @@ function Index() {
             </div>
             <div className="mx-auto flex w-full max-w-[22rem] gap-4">
               <img
-                src={guiaPortada}
+                src={guiaPortada.url}
                 alt="Portada de la Guía CALMA"
                 loading="lazy"
                 className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
               />
               <img
-                src={guiaProtocolo}
+                src={guiaProtocolo.url}
                 alt="Página interior con el Protocolo CALMA paso a paso"
                 loading="lazy"
                 className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
@@ -732,13 +732,13 @@ function Index() {
               </p>
               <div className="flex w-full justify-center gap-4">
                 <img
-                  src={guiaPortada}
+                  src={guiaPortada.url}
                   alt="Portada de la Guía CALMA"
                   loading="lazy"
                   className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
                 />
                 <img
-                  src={guiaProtocolo}
+                  src={guiaProtocolo.url}
                   alt="Página interior del Protocolo CALMA"
                   loading="lazy"
                   className="w-1/2 rounded-2xl border border-border object-cover shadow-[0_18px_40px_-28px_oklch(0.5_0.06_250/0.5)]"
