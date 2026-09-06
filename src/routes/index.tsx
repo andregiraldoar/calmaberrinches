@@ -277,7 +277,7 @@ function Index() {
 
           <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground md:flex">
             <a href="#protocolo" className="transition-colors hover:text-foreground">
-              El método
+              El protocolo
             </a>
             <a href="#que-recibes" className="transition-colors hover:text-foreground">
               Qué recibes
