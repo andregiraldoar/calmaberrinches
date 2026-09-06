@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useEffect, useState } from "react";
+
 import {
   Accordion,
   AccordionContent,
@@ -77,34 +77,6 @@ function Eyebrow({ children, tone = "sky" }: { children: React.ReactNode; tone?:
   );
 }
 
-function Countdown() {
-  const [left, setLeft] = useState(6 * 3600);
-  useEffect(() => {
-    const t = setInterval(() => setLeft((s) => (s > 0 ? s - 1 : 0)), 1000);
-    return () => clearInterval(t);
-  }, []);
-  const pad = (n: number) => String(n).padStart(2, "0");
-  const parts = [
-    { v: pad(Math.floor(left / 3600)), l: "Horas" },
-    { v: pad(Math.floor((left % 3600) / 60)), l: "Min" },
-    { v: pad(left % 60), l: "Seg" },
-  ];
-  return (
-    <div className="flex items-end justify-center gap-3">
-      {parts.map((p, i) => (
-        <div key={p.l} className="flex items-end gap-3">
-          <div className="rounded-2xl bg-cream px-4 py-3 text-center">
-            <div className="font-display text-3xl font-extrabold text-primary">{p.v}</div>
-            <div className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
-              {p.l}
-            </div>
-          </div>
-          {i < 2 && <span className="pb-4 text-2xl font-bold text-muted-foreground">:</span>}
-        </div>
-      ))}
-    </div>
-  );
-}
 
 const problems = [
   {
@@ -132,7 +104,7 @@ const benefits = [
   ["Sostener límites sin gritar ni ceder", "Con firmeza y calma, incluso en público."],
   ["Reducir la culpa después de un mal momento", "Con un método concreto para reparar y seguir adelante."],
   ["Entender por qué a ti también te cuesta", "Sin juicios — con explicación real de tus propias reacciones."],
-  ["Ver resultados desde el primer berrinche que apliques el protocolo", "No necesitas semanas de teoría — es aplicable de inmediato."],
+  ["Aplicarlo desde el primer berrinche", "No necesitas semanas de teoría. Tienes un protocolo concreto para empezar a aplicar desde hoy."],
 ];
 
 const steps = [
@@ -153,7 +125,7 @@ const after = [
   "🧘 Sabes exactamente qué decir y hacer",
   "💚 Sostienes límites sin gritar ni ceder",
   "🙌 Confianza real en cualquier lugar",
-  "🤝 Más conexión con tu hijo/a, no menos",
+  "🤝 Más seguridad para acompañar a tu hijo/a",
 ];
 
 const guideBullets = [
@@ -335,13 +307,15 @@ function Index() {
           <div className="flex flex-col items-center">
             <Eyebrow tone="mint">Guía profesional para padres de niños de 2 a 6 años</Eyebrow>
             <h1 className="mt-5 text-balance-tight font-display text-4xl font-extrabold leading-[1.08] text-primary sm:text-5xl lg:text-[3.4rem]">
-              Cómo manejar los berrinches{" "}
+              CALMA: el protocolo de 5 pasos para manejar los berrinches{" "}
               <span className="text-coral-foreground">sin gritos ni culpa</span>
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Un protocolo concreto de 5 pasos para el momento exacto de la crisis — con frases
-              exactas, listo para aplicar hoy. Incluye la guía + 7 bonos + 3 extras, todo en PDF
-              rellenable con acceso inmediato.
+              Una herramienta práctica con frases concretas que te guía sobre qué hacer y qué decir
+              durante un berrinche, para acompañar a tu hijo sin ceder en los límites.
+            </p>
+            <p className="mt-4 text-sm font-bold uppercase tracking-[0.14em] text-muted-foreground">
+              5 pasos claros · Frases prácticas · 7 herramientas + 3 extras · Acceso inmediato
             </p>
           </div>
 
@@ -358,7 +332,7 @@ function Index() {
 
           <div className="flex flex-col items-center">
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Cta>Quiero mi guía CALMA →</Cta>
+              <Cta>QUIERO MI GUÍA CALMA →</Cta>
               <a
                 href="#protocolo"
                 className="rounded-full border border-border bg-card px-6 py-4 text-sm font-bold text-primary"
@@ -376,9 +350,8 @@ function Index() {
             </div>
             {/* Social proof */}
             <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
-              <span className="text-butter-foreground text-lg">★★★★★</span>
               <span className="text-sm font-bold text-muted-foreground">
-                4,7/5 — +300 padres ya la adquirieron
+                Guía + 7 herramientas + 3 extras · todo en PDF rellenable
               </span>
             </div>
             <p className="mt-5 text-sm text-muted-foreground">
@@ -401,7 +374,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="butter">¿Te resulta familiar?</Eyebrow>
           <h2 className="mx-auto mt-5 max-w-2xl text-3xl font-extrabold leading-tight text-primary sm:text-4xl">
-            El problema no es tu hijo. Es no saber qué hacer EN el momento.
+            El problema no es que tu hijo tenga emociones. Es no saber qué hacer EN el momento.
           </h2>
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {problems.map((p) => (
@@ -450,8 +423,8 @@ function Index() {
             El Protocolo CALMA
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            5 pasos, en orden, para aplicar exactamente durante la crisis — sin necesidad de
-            recordar teoría.
+            No necesitas memorizar teoría. Sigue los 5 pasos en orden y utiliza las frases de la
+            guía.
           </p>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
             {steps.map((s) => (
@@ -506,7 +479,7 @@ function Index() {
         <div className="mx-auto max-w-6xl px-5 text-center">
           <Eyebrow tone="coral">Qué recibes</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
-            Una guía completa, no solo teoría
+            No es solo una guía. Es una herramienta para usar en el momento.
           </h2>
 
           <div className="mt-10 soft-card grid gap-8 p-8 lg:grid-cols-[1fr_auto] lg:items-center">
@@ -550,7 +523,7 @@ function Index() {
           <div className="mt-14 text-center">
             <Eyebrow tone="butter">🎁 7 bonos incluidos</Eyebrow>
             <h3 className="mt-4 text-2xl font-extrabold text-primary sm:text-3xl">
-              Herramientas prácticas para tu día a día
+              Y además, recibes 7 herramientas prácticas para aplicar CALMA en casa
             </h3>
           </div>
 
@@ -651,34 +624,39 @@ function Index() {
             </span>
             <div className="mx-auto max-w-3xl">
               <h3 className="text-xl font-bold text-primary">
-                Diseñada con base científica
+                Inspirada en principios de psicología del desarrollo infantil
               </h3>
               <p className="mt-2 text-muted-foreground">
-                Esta guía está diseñada con base en principios establecidos de psicología del
-                desarrollo infantil — pensada para ser aplicable desde el primer berrinche, no solo
-                para leerse.
+                Esta guía está inspirada en principios establecidos de psicología del desarrollo
+                infantil — pensada para ser aplicable desde el primer berrinche, no solo para
+                leerse.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Honest content presentation */}
       <section className="bg-secondary/60 py-20">
         <div className="mx-auto max-w-6xl px-5 text-center">
-          <Eyebrow tone="butter">Testimonios</Eyebrow>
+          <Eyebrow tone="butter">Lo que encontrarás</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
-            Lo que dicen otros padres y madres
+            Una guía pensada para usar, no solo para leer
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            CALMA está diseñada como una herramienta práctica: cada sección tiene un propósito
+            concreto para acompañar a tu hijo en el momento del berrinche.
+          </p>
           <div className="mt-10 grid gap-6 md:grid-cols-3">
-            {testimonials.map(([q, a]) => (
-              <figure key={a} className="soft-card p-7">
-                <div className="text-butter-foreground">★★★★★</div>
-                <blockquote className="mt-4 leading-relaxed text-muted-foreground">
-                  “{q}”
-                </blockquote>
-                <figcaption className="mt-5 text-sm font-bold text-primary">{a}</figcaption>
-              </figure>
+            {[
+              ["Protocolo de 5 pasos", "Contener, Acompañar, Limitar, Mostrar comprensión y Acordar — en orden, con frases listas."],
+              ["Herramientas rellenables", "Tarjeta rápida, rueda de emociones, termómetro de la calma, diario, calendario y más — para usar hoy."],
+              ["Para la edad de tu hijo", "Secciones diferenciadas para 2-3 años y 4-6 años, con ejemplos concretos para cada etapa."],
+            ].map(([t, d]) => (
+              <div key={t} className="soft-card p-7 text-left">
+                <h3 className="text-lg font-bold text-primary">{t}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{d}</p>
+              </div>
             ))}
           </div>
         </div>
@@ -848,7 +826,7 @@ function Index() {
           </div>
 
           <div className="mt-6 text-sm font-bold text-muted-foreground">
-            Producto principal + 7 bonos + 3 extras incluidos
+            Guía CALMA + 7 herramientas + 3 extras
           </div>
 
           <div className="mt-8">
@@ -863,21 +841,23 @@ function Index() {
           <div className="soft-card p-8 text-center sm:p-12">
             <Eyebrow tone="coral">Oferta especial</Eyebrow>
             <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
-              Recupera la calma en tu hogar hoy
+              Todo CALMA por $9.99
             </h2>
             <p className="mt-3 font-semibold text-coral-foreground">
-              27% de descuento por tiempo limitado
+              Guía + 7 herramientas + 3 extras
             </p>
-            <div className="mt-7">
-              <Countdown />
-            </div>
+            <p className="mt-7 font-display text-2xl font-extrabold text-coral-foreground">
+              Oferta de lanzamiento · 27% de descuento
+            </p>
             <p className="mt-8 text-sm text-muted-foreground">
               Antes <s>$13.99 USD</s>
             </p>
             <p className="font-display text-6xl font-extrabold text-primary">
               $9<span className="text-3xl">.99</span>
             </p>
-            <p className="mt-1 text-sm text-muted-foreground">Pago único · acceso inmediato</p>
+            <p className="mt-2 text-sm font-bold text-muted-foreground">
+              Acceso inmediato · Pago único · Acceso de por vida
+            </p>
             <div className="mt-8 grid gap-3 sm:grid-cols-3">
               {[
                 ["13 pág.", "Guía completa"],
@@ -909,7 +889,7 @@ function Index() {
                 ))}
               </ul>
             </div>
-            <Cta className="mt-8 w-full">Quiero mi guía CALMA ahora</Cta>
+            <Cta className="mt-8 w-full">QUIERO TODO EL PAQUETE CALMA →</Cta>
             <p className="mt-4 text-xs text-muted-foreground">
               🔒 Compra 100% segura · Acceso inmediato en tu correo
             </p>
