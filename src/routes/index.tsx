@@ -40,7 +40,7 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-const CHECKOUT = "https://pay.hotmart.com/Y107364819V";
+const CHECKOUT = "https://pay.hotmart.com/Y107364819V?checkoutMode=10";
 
 function Cta({
   children,
