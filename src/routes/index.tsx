@@ -277,7 +277,7 @@ function Index() {
 
           <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground md:flex">
             <a href="#protocolo" className="transition-colors hover:text-foreground">
-              El método
+              El protocolo
             </a>
             <a href="#que-recibes" className="transition-colors hover:text-foreground">
               Qué recibes
@@ -412,7 +412,7 @@ function Index() {
       {/* Protocol */}
       <section id="protocolo" className="bg-secondary/60 py-20">
         <div className="mx-auto max-w-6xl px-5 text-center">
-          <Eyebrow tone="sky">El método</Eyebrow>
+          <Eyebrow tone="sky">El protocolo</Eyebrow>
           <h2 className="mt-5 text-3xl font-extrabold text-primary sm:text-4xl">
             El Protocolo CALMA
           </h2>
